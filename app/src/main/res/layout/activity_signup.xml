@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/lightgray">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+
+        android:text="Create New Account"
+        android:textColor="#110D0D"
+        android:layout_marginTop="25dp"
+        android:textSize="30dp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"
+
+        android:hint="  Enter Your Name:"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="303dp"
+
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+
+        android:hint="  Enter Your Password:"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:id="@+id/Useremail"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+
+        android:hint="  Enter Your Email ID:"
+
+        />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="303dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/Useremail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+
+
+        android:hint=" Enter Your age:" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="122dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/age"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape1"
+
+        android:text="Sign Up" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="237dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape1"
+        android:text="Already have a Account" />
+
+    <ProgressBar
+        android:id="@+id/progresBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBaseline="@id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_gravity="center"
+        android:layout_marginBottom="526dp"
+        android:visibility="gone" />
+</RelativeLayout>

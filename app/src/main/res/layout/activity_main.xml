@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/imageView"
+        android:layout_width="185dp"
+        android:layout_height="204dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="-4dp"
+        android:text="Demo App"
+      android:textColor="@color/darkblue"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editext"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="53dp"
+        android:background="@drawable/shape1"
+        android:defaultFocusHighlightEnabled="true"
+        android:hint="    Enter Your Email:"
+        android:textColorHint="@color/testcolorblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordtext"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editext"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/shape1"
+
+        android:hint="   Enter Password:"
+        android:textColorHint="@color/darkblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/singup1"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@+id/passwordtext"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/radshape"
+        android:text="Sign in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordtext" />
+
+
+
+    <Button
+        android:id="@+id/singup2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singup1"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        android:background="@drawable/radshape"
+        android:clickable="true"
+        android:text="Create  New Account" />
+
+    <ProgressBar
+        android:id="@+id/progresBar1"
+        android:layout_width="37dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="526dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
